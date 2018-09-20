@@ -145,3 +145,4 @@ sub do_the_tests {
   ok($test->[7] eq $parser->get_raw_info,           'Info');
   ok($test->[8] eq $parser->get_raw_formats,        'Formats');
 }
+
