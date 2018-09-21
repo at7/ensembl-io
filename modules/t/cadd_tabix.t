@@ -42,7 +42,7 @@ is_deeply($parser->{'record'}, \@test_row, "Test basic parsing of a row");
 note "Testing each column of the row";
 do_the_tests(\@test_row);
 
-$parser->seek(33,302918295,302918295); 
+$parser->seek(10,302918295,302918295); 
 my $return = $parser->next;
 cmp_ok ($return, "!=", 1, "Next returns 0 if non existing chromosome was used in seek");
 
